@@ -20,9 +20,8 @@ MiraLab用のZennの記事作成ドキュメント
 
 1. ターミナル上で `docker compose up -d --build` を実行
 2. 記事を作成する用のブランチを新しく作成する(ブランチ名はなんでもOK)
-3. ターミナル上で `docker exec midra-lab-zenn zenn new:article bash` を実行する
-4. 作成された記事の headerに コミュニティと記事を紐づけをするために、 `publication_name: "midra_lab"` を追加する
-5. `articles`内に新しく生成されたファイルに記事を書いていく
+3. ターミナル上で `docker exec midra-lab-zenn zenn new:article --publication-name midra_lab bash` を実行する
+4. `articles`内に新しく生成されたファイルに記事を書いていく
 
 ## 記事のPreview
 
