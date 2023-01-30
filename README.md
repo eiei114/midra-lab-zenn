@@ -35,6 +35,12 @@ MiraLab用のZennの記事作成ドキュメント
 3. `main` branchにPRを出す
 4. テストが通ったら自動で公開される
 
+## 記事の削除
+
+安全のため、コンテンツの削除は[ダッシュボードの投稿管理](https://zenn.dev/dashboard)からのみ行うことができます。
+
+![](docs/images/delete-zenn-article.png)
+
 # 参考サイト
 
 * [Zenn CLIで記事・本を管理する方法](https://zenn.dev/zenn/articles/zenn-cli-guide)
