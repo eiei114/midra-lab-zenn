@@ -6,18 +6,20 @@ MiraLab用のZennの記事作成ドキュメント
 
 ## 準備
 
-1. [Zenn](https://zenn.dev/)のアカウントを作成する
-2. 以下の画像のようにZennの[GitHub連携](https://zenn.dev/dashboard/deploys?tab=repo_settings)
+1. [Docker](https://www.docker.com/)のインストール
+2. [Zenn](https://zenn.dev/)のアカウントを作成する
+3. 以下の画像のようにZennの[GitHub連携](https://zenn.dev/dashboard/deploys?tab=repo_settings)
    にて[midra-lab-zenn](https://github.com/MidraLab/midra-lab-zenn)との連携及びデプロイ対象ブランチを `main` に設定する
 
 ![](docs/images/zennとgithubの連携と設定.png)
 
 ## 新規記事の作成
 
-1. 記事を作成する用のブランチを新しく作成する(ブランチ名はなんでもOK)
-2. ターミナル上で `docker exec midra-lab-zenn zenn new:article bash` を実行する
-3. 作成された記事の headerに コミュニティと記事を紐づけをするために、 `publication_name: "midra_lab"` を追加する
-4. `articles`内に新しく生成されたファイルに記事を書いていく
+1. ターミナル上で `docker compose up -d --build` を実行
+2. 記事を作成する用のブランチを新しく作成する(ブランチ名はなんでもOK)
+3. ターミナル上で `docker exec midra-lab-zenn zenn new:article bash` を実行する
+4. 作成された記事の headerに コミュニティと記事を紐づけをするために、 `publication_name: "midra_lab"` を追加する
+5. `articles`内に新しく生成されたファイルに記事を書いていく
 
 ## 記事のPreview
 
