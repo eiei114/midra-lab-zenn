@@ -3,7 +3,6 @@ on:
     branches:
       - main
 
-name: TOC Generator
 jobs:
   generateTOC:
     name: TOC Generator
