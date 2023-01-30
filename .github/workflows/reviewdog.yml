@@ -13,6 +13,9 @@ jobs:
         uses: actions/setup-node@v3.6.0
         with:
           node-version: '15'
+      - name: install textlint env
+        run: |
+          npm install --save-dev textlint textlint-rule-preset-ja-technical-writing textlint-rule-preset-ja-spacing
       - name: textlint-github-pr-check
         uses: tsuyoshicho/action-textlint@v3
         with:
